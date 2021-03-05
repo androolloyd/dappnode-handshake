@@ -1,0 +1,22 @@
+version: "3.4"
+services:
+  handshake.public.dappnode.eth:
+    build: ./build
+    image: "handshake.public.dappnode.eth:0.1.0"
+    restart: unless-stopped
+    volumes:
+      - "chain_data:/root/.hsd"
+    environment:
+      - PRUNE=1
+      - HSD_LOG_CONSOLE=true
+      - HSD_LOG_LEVEL=debug
+      - HSD_MAX_OUTBOUND=3
+      - HSD_HTTP_HOST=0.0.0.0
+      - HSD_WALLET_API_KEY=changeMePlz
+      - HSD_WALLET_WALLET_AUTH=true
+      - HSD_NETWORK=main
+      - HSD_PORT=12037
+    expose:
+      - 12037
+volumes:
+  chain_data: {}

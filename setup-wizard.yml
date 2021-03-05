@@ -1,0 +1,31 @@
+version: "2"
+fields:
+  - id: HSD_WALLET_WALLET_AUTH
+    target:
+      type: environment
+      name: HSD_WALLET_WALLET_AUTH
+    title: Wallet API ENABLED
+    enum:
+      - true
+      - false
+    description: >-
+      API Key to authorize access to the wallet on the node, if false API key is not checked
+  - id: HSD_WALLET_API_KEY
+    target:
+      type: environment
+      name: HSD_WALLET_API_KEY
+    title: Wallet API KEY
+    description: >-
+      API Key to authorize access to the wallet on the node
+
+  - id: HSD_NETWORK
+    target:
+      type: environment
+      name: HSD_NETWORK
+    title: Network
+    enum:
+      - main
+      - testnet
+      - regtest
+    description: >-
+      The network for the handshake node to connect to

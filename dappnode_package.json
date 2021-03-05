@@ -1,0 +1,34 @@
+{
+  "name": "handshake.public.dappnode.eth",
+  "version": "0.1.0",
+  "upstreamVersion": "master",
+  "upstreamRepo": "handshake-org/hsd",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "description": "",
+  "type": "service",
+  "author": "androolloyd <opensource@andrewredden.com> (https://github.com/androolloyd)",
+  "contributors": [
+    "terra-project (https://github.com/terra-project)"
+  ],
+  "categories": [
+    "Developer tools",
+    "Communications"
+  ],
+  "keywords": [
+    "handshake"
+  ],
+  "globalEnvs": {
+    "all": true
+  },
+  "backup": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/androolloyd/dappnode-handshake"
+  },
+  "links": {
+    "homepage": "https://handshake.org",
+    "gateway": "http://handshake.public.dappnode:12037"
+  },
+  "license": "GPL v3"
+}
